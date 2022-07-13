@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch firefox localhost",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "url": "http://localhost:3000/SocialNetworkProjectFrontend/",
+            "webRoot": "${workspaceFolder}/src",
+            "enableCRAWorkaround": true,
+            "clearConsoleOnReload": true,
+            "reloadOnAttach": true,
+            "reloadOnChange": {
+                "watch": [
+                    "${workspaceFolder}/public",
+                    "${workspaceFolder}/src"
+                ]
+            }
+        }
+    ]
+}
