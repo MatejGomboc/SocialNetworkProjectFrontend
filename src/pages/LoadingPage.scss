@@ -1,22 +1,5 @@
-@media (prefers-reduced-motion: no-preference) {
-    @keyframes SpinnerSpin {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
-}
-
 main.LoadingPage {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-img.LoadingPage {
-    @media (prefers-reduced-motion: no-preference) {
-        animation: SpinnerSpin infinite 3s linear;
-    }
 }

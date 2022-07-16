@@ -1,7 +1,7 @@
 import React from "react";
 import "./NotFoundPage.scss";
 
-const NotFoundPage: React.FC<{}> = () => {
+const NotFoundPage: React.FC<{}> = (): JSX.Element => {
     return(
         <main className="NotFoundPage">
             <h1 className="NotFoundPage">
