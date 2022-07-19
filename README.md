@@ -1,2 +1,2 @@
 # SocialNetworkProjectFrontend
-https://matejgomboc.github.io/SocialNetworkProjectFrontend/
+https://matejgomboc.github.io/SocialNetworkProjectFrontend
