@@ -10,6 +10,8 @@
 }
 
 img.Spinner {
+    box-sizing: border-box;
+
     @media (prefers-reduced-motion: no-preference) {
         animation: SpinnerSpin infinite 3s linear;
     }
