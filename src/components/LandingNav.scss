@@ -21,20 +21,3 @@ h1.LandingNav {
     font-weight: bold;
     font-size: 3rem;
 }
-
-button.LandingNav {
-    box-sizing: border-box;
-    background-color: darkgreen;
-    color: white;
-    border-style: none;
-    font-size: 2rem;
-    margin: 0;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-
-    &:hover {
-        background-color: orange;
-        color: white;
-    }
-}
