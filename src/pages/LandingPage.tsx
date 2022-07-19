@@ -1,11 +1,11 @@
 import React from "react";
-import LandingNav from "../components/LandingNav";
+import LandingMenu from "../components/LandingMenu";
 import "./LandingPage.scss";
 
 const LandingPage: React.FC = (): JSX.Element => {
     return(
         <main className="LandingPage">
-            <LandingNav />
+            <LandingMenu />
         </main>
     );
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import LinkButton from "./LinkButton";
-import "./LandingNav.scss";
+import "./LandingMenu.scss";
 
-const LandingNav: React.FC = (): JSX.Element => {
+const LandingMenu: React.FC = (): JSX.Element => {
     return(
-        <nav className="LandingNav">
-            <h1 className="LandingNav">
+        <nav className="LandingMenu">
+            <h1 className="LandingMenu">
                 SocialNetworkProject
             </h1>
 
@@ -15,4 +15,4 @@ const LandingNav: React.FC = (): JSX.Element => {
     );
 }
 
-export default LandingNav;
+export default LandingMenu;
