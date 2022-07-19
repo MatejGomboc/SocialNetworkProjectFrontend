@@ -4,8 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoadingPage from "./pages/LoadingPage";
 import "./index.scss";
 
-const LandingPage: React.FC<{}> = lazy(() => import("./pages/LandingPage"));
-const NotFoundPage: React.FC<{}> = lazy(() => import("./pages/NotFoundPage"));
+const LandingPage: React.FC = lazy(() => import("./pages/LandingPage"));
+const RegisterPage: React.FC = lazy(() => import("./pages/RegisterPage"));
+const NotFoundPage: React.FC = lazy(() => import("./pages/NotFoundPage"));
 
 const root: ReactDOM.Root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -17,6 +18,7 @@ root.render(
             <Suspense fallback={<LoadingPage />}>
                 <Routes>
                     <Route path="/" element={<LandingPage />} />
+                    <Route path="/register" element={<RegisterPage />} />
                     <Route path="*" element={<NotFoundPage />} />
                 </Routes>
             </Suspense>
