@@ -11,3 +11,24 @@ div.RegisterForm {
         margin-bottom: 10px;
     }
 }
+
+h1.RegisterForm {
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+input.RegisterForm {
+    box-sizing: border-box;
+    background-color: rgb(0, 45, 0);
+    color: white;
+    border-radius: 5px;
+    margin: 0;
+    padding: 10px;
+    font-size: 2rem;
+    border-style: none;
+}
