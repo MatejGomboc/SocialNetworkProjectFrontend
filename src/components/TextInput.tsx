@@ -1,16 +1,15 @@
 import React from "react";
-import "./Input.scss";
+import BaseInput from "./BaseInput";
 
 interface Props {
     placeholder: string,
-    onChange: React.ChangeEventHandler<HTMLInputElement>
+    onChange: (text: string) => void
 }
 
 const TextInput: React.FC<Props> = (props: Props): JSX.Element => {
     return(
-        <input
+        <BaseInput
             type="text"
-            className="Input"
             placeholder={props.placeholder}
             onChange={props.onChange}
         />

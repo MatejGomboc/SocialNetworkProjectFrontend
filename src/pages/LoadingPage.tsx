@@ -1,6 +1,6 @@
 import React from "react";
-import "./LoadingPage.scss";
 import Spinner from "../components/Spinner";
+import "./LoadingPage.scss";
 
 const LoadingPage: React.FC = (): JSX.Element => {
     return(
