@@ -7,7 +7,7 @@ interface Props {
     height: number;
 }
 
-const Spinner: React.FC<Props> = (props): JSX.Element => {
+const Spinner: React.FC<Props> = (props: Props): JSX.Element => {
     return(
         <img src={SpinnerImage} className="Spinner" alt="Spinner" width={props.width} height={props.height} />
     );

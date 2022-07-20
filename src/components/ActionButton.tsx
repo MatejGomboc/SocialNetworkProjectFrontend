@@ -6,7 +6,7 @@ interface Props {
     onClick: React.MouseEventHandler<HTMLButtonElement>
 }
 
-const ActionButton: React.FC<Props> = (props): JSX.Element => {
+const ActionButton: React.FC<Props> = (props: Props): JSX.Element => {
     return(
         <button
             className="Button"

@@ -7,7 +7,7 @@ interface Props {
     link: string
 }
 
-const LinkButton: React.FC<Props> = (props): JSX.Element => {
+const LinkButton: React.FC<Props> = (props: Props): JSX.Element => {
     const navigate: NavigateFunction = useNavigate();
 
     return(
