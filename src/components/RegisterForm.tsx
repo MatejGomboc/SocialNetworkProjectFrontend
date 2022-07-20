@@ -1,8 +1,13 @@
 import React from "react";
+import ActionButton from "./ActionButton";
 import LinkButton from "./LinkButton";
 import "./RegisterForm.scss";
 
 const RegisterForm: React.FC = (): JSX.Element => {
+    const handleSubmit: React.MouseEventHandler<HTMLButtonElement> =
+        (event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void => {
+    }
+
     return(
         <div className="RegisterForm">
             <h1 className="RegisterForm">Create new account</h1>
@@ -26,7 +31,8 @@ const RegisterForm: React.FC = (): JSX.Element => {
                 className="RegisterForm"
                 placeholder="email address"
             />
-            <LinkButton text="BACK" link="/"/>
+            <ActionButton text="REGISTER" onClick={handleSubmit} />
+            <LinkButton text="BACK" link="/" />
         </div>
     );
 }

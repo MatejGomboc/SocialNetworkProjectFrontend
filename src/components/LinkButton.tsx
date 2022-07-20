@@ -1,6 +1,6 @@
 import React from "react";
 import { NavigateFunction, useNavigate } from "react-router-dom";
-import "./LinkButton.scss";
+import "./Button.scss";
 
 interface Props {
     text: string,
@@ -12,7 +12,7 @@ const LinkButton: React.FC<Props> = (props): JSX.Element => {
 
     return(
         <button
-            className="LinkButton"
+            className="Button"
             onClick={() => navigate(props.link)}
         >
             {props.text}
