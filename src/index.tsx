@@ -17,7 +17,7 @@ root.render(
         <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Suspense fallback={<LoadingPage />}>
                 <Routes>
-                    <Route path="/" element={<LandingPage />} />
+                    <Route index element={<LandingPage />} />
                     <Route path="/register" element={<RegisterPage />} />
                     <Route path="*" element={<NotFoundPage />} />
                 </Routes>
