@@ -5,6 +5,7 @@ import EmailInput from "./EmailInput";
 import ActionButton from "./ActionButton";
 import LinkButton from "./LinkButton";
 import "./RegisterForm.scss";
+import AuthService from "../services/AuthService";
 
 const RegisterForm: React.FC = (): JSX.Element => {
     const [username, setUsername] = useState<string>("");
@@ -13,6 +14,14 @@ const RegisterForm: React.FC = (): JSX.Element => {
     const [email, setEmail] = useState<string>("");
 
     const handleSubmit = () => {
+        AuthService.register(username, password1, password2, email).then(
+            (value: boolean) => {
+                alert("value: " + value);
+            },
+            (reason) => {
+                alert("reason: " + reason);
+            }
+        );
     }
 
     return(
