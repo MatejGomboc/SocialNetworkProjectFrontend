@@ -14,12 +14,16 @@ const RegisterForm: React.FC = (): JSX.Element => {
     const [email, setEmail] = useState<string>("");
 
     const handleSubmit = () => {
-        AuthService.register(username, password1, password2, email).then(
-            (value: boolean) => {
-                alert("value: " + value);
+        AuthService.register(username, password1, password2, email).then<void, void>(
+            () => {
+                alert("OK!");
             },
-            (reason) => {
-                alert("reason: " + reason);
+            (reason: any) => {
+                if (reason instanceof Error) {
+                    alert(reason.message);
+                } else {
+                    alert("Unknown error type: " + reason);
+                }
             }
         );
     }
