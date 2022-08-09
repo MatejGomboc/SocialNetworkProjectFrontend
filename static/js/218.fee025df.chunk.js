@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksocial_network_project_frontend=self.webpackChunksocial_network_project_frontend||[]).push([[218],{218:function(n,e,t){t.r(e),t.d(e,{default:function(){return r}});t(791);var o=t(184),r=function(){return(0,o.jsx)("main",{className:"NotFoundPage",children:(0,o.jsx)("h1",{className:"NotFoundPage",children:"404 - Content Not Found"})})}}}]);
+//# sourceMappingURL=218.fee025df.chunk.js.map

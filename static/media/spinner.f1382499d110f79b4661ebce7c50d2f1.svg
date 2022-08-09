@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="-58 -58 116 116" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <path id="a" d="m0 35v14" stroke-linecap="round" stroke-width="15"/>
+ <g stroke-linecap="round" stroke-width="15">
+  <use transform="rotate(210)" width="100%" height="100%" stroke="#f0fff0" xlink:href="#a"/>
+  <use transform="rotate(240)" width="100%" height="100%" stroke="#ebffeb" xlink:href="#a"/>
+  <use transform="rotate(-90)" width="100%" height="100%" stroke="#d3ffd3" xlink:href="#a"/>
+  <use transform="rotate(-60)" width="100%" height="100%" stroke="#bcffbc" xlink:href="#a"/>
+  <use transform="rotate(-30)" width="100%" height="100%" stroke="#a4ffa4" xlink:href="#a"/>
+  <use width="100%" height="100%" stroke="#8dff8d" xlink:href="#a"/>
+  <use transform="rotate(30)" width="100%" height="100%" stroke="#75ff75" xlink:href="#a"/>
+  <use transform="rotate(60)" width="100%" height="100%" stroke="#5eff5e" xlink:href="#a"/>
+  <use transform="rotate(90)" width="100%" height="100%" stroke="#46ff46" xlink:href="#a"/>
+  <use transform="rotate(120)" width="100%" height="100%" stroke="#2fff2f" xlink:href="#a"/>
+  <use transform="rotate(150)" width="100%" height="100%" stroke="#17ff17" xlink:href="#a"/>
+  <use transform="scale(-1)" width="100%" height="100%" stroke="#00ff00" xlink:href="#a"/>
+ </g>
+</svg>
