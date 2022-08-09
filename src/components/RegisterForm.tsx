@@ -7,7 +7,12 @@ import LinkButton from "./LinkButton";
 import "./RegisterForm.scss";
 import AuthService from "../services/AuthService";
 
-const RegisterForm: React.FC = (): JSX.Element => {
+interface Props {
+    onSubmitSuccess: () => void,
+    onSubmitError: (status: string) => void
+}
+
+const RegisterForm: React.FC<Props> = (props: Props): JSX.Element => {
     const [username, setUsername] = useState<string>("");
     const [password1, setPassword1] = useState<string>("");
     const [password2, setPassword2] = useState<string>("");
@@ -16,13 +21,13 @@ const RegisterForm: React.FC = (): JSX.Element => {
     const handleSubmit = () => {
         AuthService.register(username, password1, password2, email).then<void, void>(
             () => {
-                alert("OK!");
+                props.onSubmitSuccess();
             },
             (reason: any) => {
                 if (reason instanceof Error) {
-                    alert(reason.message);
+                    props.onSubmitError(reason.message);
                 } else {
-                    alert("Unknown error type: " + reason);
+                    props.onSubmitError("Unknown error type: " + reason);
                 }
             }
         );
